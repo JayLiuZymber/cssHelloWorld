@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- 
+鐵人賽 Day12 -- 一定要知道的 CSS (九) -- Position 定位 & opacity 透明度 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天
+https://ithelp.ithome.com.tw/articles/10262868
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .aaa{
+            position: static;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(115deg, #7bf 30%,rgb(207, 218, 241) 50%);
+        }
+        .bbb{
+            position: relative;
+            left: 100px;
+            top: 50px;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(115deg, #7bf 30%,rgb(207, 218, 241) 50%);
+        }
+        .ccc{
+            position: absolute;
+            left: 50px;
+            width: 200px;
+            height: 200px;
+            border: #000 2px solid;
+            background: linear-gradient(115deg, rgb(195, 225, 255) 30%,rgb(56, 118, 250) 50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="aaa">
+        <div class="bbb">
+            <div class="ccc">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
