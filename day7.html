@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- 
+鐵人賽 Day7 -- 一定要知道的 CSS (四) -Justify-content - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天
+https://ithelp.ithome.com.tw/articles/10260890
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .banner1{
+            display:flex;
+            justify-content: start;
+        }
+        .banner2{
+            display:flex;
+            justify-content: center;
+        }
+        .banner3{
+            display:flex;
+            justify-content: end;
+        }
+        .banner4{
+            display:flex;
+            justify-content: space-around;
+        }
+        .banner5{
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .item{
+            background-color: rgb(158, 255, 2);
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    banner1
+    <div class="banner1">
+        <div class="item">
+            <h2>內容器1</h2>
+        </div>
+        <div class="item">
+            <h2>內容器2</h2>
+        </div>
+        <div class="item">
+            <h2>內容器3</h2>
+        </div>
+    </div>
+    banner2
+    <div class="banner2">
+        <div class="item">
+            <h2>內容器1</h2>
+        </div>
+        <div class="item">
+            <h2>內容器2</h2>
+        </div>
+        <div class="item">
+            <h2>內容器3</h2>
+        </div>
+    </div>
+    banner3
+    <div class="banner3">
+        <div class="item">
+            <h2>內容器1</h2>
+        </div>
+        <div class="item">
+            <h2>內容器2</h2>
+        </div>
+        <div class="item">
+            <h2>內容器3</h2>
+        </div>
+    </div>
+    banner4
+    <div class="banner4">
+        <div class="item">
+            <h2>內容器1</h2>
+        </div>
+        <div class="item">
+            <h2>內容器2</h2>
+        </div>
+        <div class="item">
+            <h2>內容器3</h2>
+        </div>
+    </div>
+    banner5
+    <div class="banner5">
+        <div class="item">
+            <h2>內容器1</h2>
+        </div>
+        <div class="item">
+            <h2>內容器2</h2>
+        </div>
+        <div class="item">
+            <h2>內容器3</h2>
+        </div>
+    </div>
+</body>
+</html>

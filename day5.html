@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- 
+鐵人賽 Day5 -- 一定要知道的 CSS (二) - display屬性的應用 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天
+https://ithelp.ithome.com.tw/articles/10260151
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .banner{
+            width: 300px;
+            height: 300px;
+            border: 2px double #000;
+        }
+        .banner h1{
+            color: blue;
+            text-align: center;
+        }
+        .banner h2{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .banner11{
+            display:block;
+            background-color: rgb(158, 255, 2);
+            width: auto;
+            height: 50px;
+        }
+
+        .banner1{
+            display:inline-block;
+            background-color: rgb(158, 255, 2);
+            width: auto;
+            height: 50px;
+            border: 2px double #000;
+        }
+        .banner2{
+            margin-top: 10px;
+            display:inline-block;
+            background-color: rgb(158, 255, 2);
+            width: auto;
+            height: 50px;
+            border: 2px double #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1>我是土地1</h2>
+        <div class="banner11">
+            <h2>display:block</h2>
+        </div>
+        <div class="banner11">
+            <h2>display:block</h2>
+        </div>
+    </div>
+    <div class="banner">
+        <h1>我是土地</h2>
+        <div class="banner1">
+            <h2>display:block</h2>
+        </div>
+        <div class="banner2">
+            <h2>display:block</h2>
+        </div>
+    </div>
+</body>
+</html>

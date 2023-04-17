@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- 
+鐵人賽 Day8 -- 一定要知道的 CSS (五) - align & 如何使 ''Div'' 區塊 置中對齊 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天
+https://ithelp.ithome.com.tw/articles/10261289
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .a1{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: start;
+            width: 100px;
+            height: 100px;
+        }
+        .a2{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 100px;
+            height: 100px;
+        }
+        .a3{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: end;
+            width: 100px;
+            height: 100px;
+        }
+        .a4{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            width: 100px;
+            height: 100px;
+        }
+        .a5{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            width: 100px;
+            height: 100px;
+        }
+
+        .aa1{
+            display: flex;
+            align-items: flex-start;
+            width: 100px;
+            height: 100px;
+        }
+        /* align-items: flex-center; */
+        .aa2{
+            display: flex;
+            align-items: flex-end;
+            width: 100px;
+            height: 100px;
+        }
+
+        .b1{
+            width: 25px;
+            height: 25px;
+            background-color: rgb(81, 255, 1);
+        }
+        .b2{
+            width: 25px;
+            height: 25px;
+            background-color: rgb(1, 255, 255);
+        }
+        .b3{
+            width: 25px;
+            height: 25px;
+            background-color: rgb(255, 247, 1);
+        }
+
+        .aaa{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            border: 2px solid #000;
+        }
+        .bbb{
+            width: 150px;
+            height: 150px;
+            background: rgb(81, 255, 1);
+        }
+    </style>
+</head>
+<body>
+    a1
+    <div class="a1">
+        <div class="b1">1</div>
+        <div class="b2">2</div>
+        <div class="b3">3</div>
+        <div class="b1">4</div>
+        <div class="b2">5</div>
+        <div class="b3">6</div>
+        <div class="b1">7</div>
+    </div>
+    a2
+    <div class="a2">
+        <div class="b1">1</div>
+        <div class="b2">2</div>
+        <div class="b3">3</div>
+        <div class="b1">4</div>
+        <div class="b2">5</div>
+        <div class="b3">6</div>
+        <div class="b1">7</div>
+    </div>
+    a3
+    <div class="a3">
+        <div class="b1">1</div>
+        <div class="b2">2</div>
+        <div class="b3">3</div>
+        <div class="b1">4</div>
+        <div class="b2">5</div>
+        <div class="b3">6</div>
+        <div class="b1">7</div>
+    </div>
+    a4
+    <div class="a4">
+        <div class="b1">1</div>
+        <div class="b2">2</div>
+        <div class="b3">3</div>
+        <div class="b1">4</div>
+        <div class="b2">5</div>
+        <div class="b3">6</div>
+        <div class="b1">7</div>
+    </div>
+    a5
+    <div class="a5">
+        <div class="b1">1</div>
+        <div class="b2">2</div>
+        <div class="b3">3</div>
+        <div class="b1">4</div>
+        <div class="b2">5</div>
+        <div class="b3">6</div>
+        <div class="b1">7</div>
+    </div>
+    aa1
+    <div class="aa1">
+        <div class="b1">1</div>
+        <div class="b2">2</div>
+        <div class="b3">3</div>
+        <div class="b1">4</div>
+        <div class="b2">5</div>
+        <div class="b3">6</div>
+        <div class="b1">7</div>
+    </div>
+    aa2
+    <div class="aa2">
+        <div class="b1">1</div>
+        <div class="b2">2</div>
+        <div class="b3">3</div>
+        <div class="b1">4</div>
+        <div class="b2">5</div>
+        <div class="b3">6</div>
+        <div class="b1">7</div>
+    </div>
+    <div class="aaa">
+        <div class="bbb">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- 
+鐵人賽 Day10 -- 一定要知道的 CSS (七) -- background:linear-gradient漸層背景 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天
+https://ithelp.ithome.com.tw/articles/10261998
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .test1{
+            width: 300px;
+            height: 300px;
+            background:linear-gradient(#e47184, #f6edb2);
+        }
+        .test2{
+            width: 300px;
+            height: 300px;
+            background:linear-gradient(-90deg,#e47184, #f6edb2);
+        }
+        .test3{
+            width: 300px;
+            height: 300px;
+            background:linear-gradient(-90deg,#e47184 20%, #f6edb2);
+        }
+        .test4{
+            width: 300px;
+            height: 300px;
+            background:linear-gradient(-90deg,#e47184 60%, #f6edb2);
+        }
+        .test5{
+            width: 600px;
+            height: 200px;
+            background: linear-gradient(115deg, #7bf 30%,transparent 50%) ,url("https://picsum.photos/600/200?random3");
+        }
+    </style>
+</head>
+<body>
+    <div class="test1"></div>
+    <div class="test2"></div>
+    <div class="test3"></div>
+    <div class="test4"></div>
+    <div class="test5"></div>
+</body>
+</html>

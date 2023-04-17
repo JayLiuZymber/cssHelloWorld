@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- 
+鐵人賽 Day6 -- 一定要知道的 CSS (三) - Flex 屬性的應用 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天
+https://ithelp.ithome.com.tw/articles/10260371
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .class1{
+            display: flex;
+            flex-direction: row ;
+            width: 300px;
+            height: 200px;
+        }
+        .class2{
+            display: flex;
+            flex-direction: column ;
+            width: 300px;
+            height: 200px;
+        }
+        .class3{
+            display: flex;
+            flex-direction: row-reverse ;
+            width: 300px;
+            height: 200px;
+        }
+        .class4{
+            display: flex;
+            flex-direction: column-reverse ;
+            width: 300px;
+            height: 200px;
+        }
+        .class5{
+            display: flex;
+            flex-wrap: nowrap ;
+            width: 200px;
+            height: 200px;
+        }
+        .class6{
+            display: flex;
+            flex-wrap: wrap ;
+            width: 200px;
+            height: 200px;
+        }
+        .class7{
+            display: flex;
+            flex-wrap: wrap-reverse ;
+            width: 200px;
+            height: 200px;
+        }
+        .item{
+            background-color: rgb(158, 255, 2);
+            width: 100px;
+            height: 100px;
+        }
+/* 
+order 屬性介紹 - Flex 基礎教學 | W3HexSchool
+https://w3c.hexschool.com/flexbox/4007bc24
+ */
+        .item1{
+            background-color: rgb(158, 255, 2);
+            width: 100px;
+            height: 100px;
+            /* 移至最後面 */
+            order: 1;
+        }
+        .item2{
+            background-color: rgb(158, 255, 2);
+            width: 100px;
+            height: 100px;
+            /* 移置最前面 */
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    class1
+    <div class="class1">
+        <div class="item">
+            <h2>內容器1</h2>
+        </div>
+        <div class="item">
+            <h2>內容器2</h2>
+        </div>
+        <div class="item">
+            <h2>內容器3</h2>
+        </div>
+    </div>
+    class2
+    <div class="class2">
+        <div class="item">
+            <h2>內容器1</h2>
+        </div>
+        <div class="item">
+            <h2>內容器2</h2>
+        </div>
+        <div class="item">
+            <h2>內容器3</h2>
+        </div>
+    </div>
+    class3
+    <div class="class3">
+        <div class="item">
+            <h2>內容器1</h2>
+        </div>
+        <div class="item">
+            <h2>內容器2</h2>
+        </div>
+        <div class="item">
+            <h2>內容器3</h2>
+        </div>
+    </div>
+    class4
+    <div class="class4">
+        <div class="item">
+            <h2>內容器1</h2>
+        </div>
+        <div class="item">
+            <h2>內容器2</h2>
+        </div>
+        <div class="item">
+            <h2>內容器3</h2>
+        </div>
+    </div>
+    class5
+    <div class="class5">
+        <div class="item">
+            <h2>內容器1</h2>
+        </div>
+        <div class="item">
+            <h2>內容器2</h2>
+        </div>
+        <div class="item">
+            <h2>內容器3</h2>
+        </div>
+    </div>
+    class6
+    <div class="class6">
+        <div class="item">
+            <h2>內容器1</h2>
+        </div>
+        <div class="item">
+            <h2>內容器2</h2>
+        </div>
+        <div class="item">
+            <h2>內容器3</h2>
+        </div>
+    </div>
+    class7
+    <div class="class7">
+        <div class="item">
+            <h2>內容器1</h2>
+        </div>
+        <div class="item">
+            <h2>內容器2</h2>
+        </div>
+        <div class="item">
+            <h2>內容器3</h2>
+        </div>
+    </div>
+    class8
+    <div class="class1">
+        <div class="item1">
+            <h2>內容器1</h2>
+        </div>
+        <div class="item">
+            <h2>內容器2</h2>
+        </div>
+        <div class="item">
+            <h2>內容器3</h2>
+        </div>
+    </div>
+    class9
+    <div class="class1">
+        <div class="item">
+            <h2>內容器1</h2>
+        </div>
+        <div class="item2">
+            <h2>內容器2</h2>
+        </div>
+        <div class="item">
+            <h2>內容器3</h2>
+        </div>
+    </div>
+</body>
+</html>
